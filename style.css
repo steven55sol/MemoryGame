@@ -28,3 +28,8 @@ body{
     box-shadow: 0 0.9rem 2.8rem rgba(88,66,0,0.2);
 }
 
+.game-container{
+    position: relative;
+    width: 100%;
+    display: grid;
+}
