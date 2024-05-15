@@ -93,9 +93,29 @@ const timeGenerator = () =>{
     timeValue.innerHTML = `<span>Time: </span> ${minutesValues}:${secondsValues}`;
 }
 
+// For calculating moves
 
+const movesCounter = ()=> {
+   movesCount += 1;
+   moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
+}
 
+// Pick random objects from the items array
 
+const generateRandom = (size = 4)=>{
+  //temporary array
+  let tempArray = [...items];
+  //initializes cardValues array
+  let cardValues = [];
+  //size should be double (4x4 matrix)/2 since pairs of objects would exist
+  size = (size * size) / 2;
+
+  //Ramdon Object selection
+  for(let i = 0; i < size; i++){
+    const ramdonIndex = Math.floor(Math.random() * tempArray.length);
+    cardValues.push(tempArray);
+  }
+ }
 
 
 
